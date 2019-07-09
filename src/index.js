@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 //  components App.js 
 import App from './App';
 //  bulma css
-import 'bulma/css/bulma.css';
 // App css
 import './App.css';
 
