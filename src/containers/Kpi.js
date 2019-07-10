@@ -1,13 +1,14 @@
 import React, { Component } from "react";
-import Roters from "./routers";
-class App extends Component {
+import { Kpi as Kpis } from "../components";
+
+class Kpi extends Component {
     render() {
         return (
             <div>
-                <Roters />
+                <Kpis />
             </div>
         );
     }
 }
 
-export default App;
+export default Kpi;

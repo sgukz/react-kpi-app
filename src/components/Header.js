@@ -1,15 +1,12 @@
-// react components
 import React, { Component } from "react";
-
-//import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-// render html
+import { Link } from "react-router-dom";
 class Header extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a className="navbar-brand" href="/">
+                <Link className="navbar-brand" exact to="/">
                     KPI Application
-                </a>
+                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -23,24 +20,24 @@ class Header extends Component {
                 <div className="collapse navbar-collapse" id="navbarColor01">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
-                            <a className="nav-link" href="/">
+                            <Link className="nav-link" exact to="/">
                                 Home <span className="sr-only">(current)</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/kpi">
+                            <Link className="nav-link" exact to="/kpi">
                                 KPI
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/competency">
+                            <Link className="nav-link" exact to="/competency">
                                 Competency
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/administrator">
+                            <Link className="nav-link" exact to="/administrator">
                                 Administrator
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <button
